@@ -376,11 +376,11 @@
     }
 
     .perf-name.nasdaq {
-      color: #024d6b;
+      color: var(--brand);
     }
 
     .perf-name.hfrx {
-      color: #6d0316;
+      color: var(--brand);
     }
 
     .perf-table {
@@ -442,154 +442,170 @@
     }
 
     /* Desktop / tablet performance tables */
-.perf-table-wrap {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 4px;
-}
+    .perf-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 4px;
+    }
 
-.perf-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.82em;
-  margin: 8px 0 14px 0;
-  border-top: 1px solid #e6e9ee;
-  border-bottom: 1px solid #e6e9ee;
-  background: #fff;
-  border-radius: 6px;
-  overflow: hidden;
-  min-width: 720px; /* avoids squashing on mid-size screens */
-}
+    .perf-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82em;
+      margin: 8px 0 14px 0;
+      border-top: 1px solid #e6e9ee;
+      border-bottom: 1px solid #e6e9ee;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      min-width: 720px;
+      /* avoids squashing on mid-size screens */
+    }
 
-.perf-table th,
-.perf-table td {
-  padding: 3px 5px;
-  text-align: right;
-  border-bottom: 1px solid #f0f2f6;
-}
+    .perf-table th,
+    .perf-table td {
+      padding: 3px 5px;
+      text-align: right;
+      border-bottom: 1px solid #f0f2f6;
+    }
 
-.perf-table th:first-child,
-.perf-table td:first-child {
-  text-align: left;
-  padding-left: 8px;
-  white-space: nowrap;
-}
+    .perf-table th:first-child,
+    .perf-table td:first-child {
+      text-align: left;
+      padding-left: 8px;
+      white-space: nowrap;
+    }
 
-.perf-table th:last-child,
-.perf-table td:last-child {
-  padding-right: 8px;
-}
+    .perf-table th:last-child,
+    .perf-table td:last-child {
+      padding-right: 8px;
+    }
 
-.perf-table thead th {
-  background: #f9fafc;
-  font-weight: 600;
-  border-bottom: 1px solid #e0e3e8;
-  color: #444;
-}
+    .perf-table thead th {
+      background: #f9fafc;
+      font-weight: 600;
+      border-bottom: 1px solid #e0e3e8;
+      color: #444;
+    }
 
-.perf-table tbody tr:last-child td {
-  border-bottom: none;
-}
+    .perf-table tbody tr:last-child td {
+      border-bottom: none;
+    }
 
-/* Labels and colour */
-.perf-name {
-  margin: 10px 0 4px;
-  font-size: 0.95em;
-  font-weight: 600;
-}
+    /* Labels and colour */
+    .perf-name {
+      margin: 10px 0 4px;
+      font-size: 0.95em;
+      font-weight: 600;
+    }
 
-.perf-name.mpst   { color: var(--brand); }
-.perf-name.nasdaq { color: #111; }
-.perf-name.hfrx   { color: #b00020; }
+    .perf-name.mpst {
+      color: var(--brand);
+    }
 
-.perf-pos { color: #008000; }
-.perf-neg { color: #c0392b; }
+    .perf-name.nasdaq {
+      color: var(--brand)
+    }
 
-/* Mobile cards – hidden by default on desktop */
-.perf-cards {
-  display: none;
-}
+    .perf-name.hfrx {
+      color: var(--brand)
+    }
 
-.perf-card-mobile {
-  border: 1px solid #e6e9ee;
-  border-radius: 8px;
-  padding: 8px 10px;
-  margin-bottom: 10px;
-  background: #ffffff;
-}
+    .perf-pos {
+      color: #008000;
+    }
 
-.perf-card-mobile h3 {
-  margin: 0 0 4px 0;
-  font-size: 0.9em;
-}
+    .perf-neg {
+      color: #c0392b;
+    }
 
-/* --- Mobile performance table styling --- */
-.perf-mobile-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.82em;
-  margin-top: 4px;
-}
+    /* Mobile cards – hidden by default on desktop */
+    .perf-cards {
+      display: none;
+    }
 
-.perf-mobile-table th,
-.perf-mobile-table td {
-  padding: 6px 6px;
-  text-align: right;
-}
+    .perf-card-mobile {
+      border: 1px solid #e6e9ee;
+      border-radius: 8px;
+      padding: 8px 10px;
+      margin-bottom: 10px;
+      background: #ffffff;
+    }
 
-/* Left-align month names */
-.perf-mobile-table th {
-  text-align: left;
-  font-weight: 500;
-  color: #444;
-}
+    .perf-card-mobile h3 {
+      margin: 0 0 4px 0;
+      font-size: 0.9em;
+    }
 
-/* Horizontal line between rows */
-.perf-mobile-table tr:not(:last-child) {
-  border-bottom: 1px solid #e4e7ec;
-}
+    /* --- Mobile performance table styling --- */
+    .perf-mobile-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82em;
+      margin-top: 4px;
+    }
 
-/* Slight highlight for last (current month) row */
-.perf-mobile-table tr:last-child {
-  background: #f9fafc;
-  border-radius: 4px;
-}
+    .perf-mobile-table th,
+    .perf-mobile-table td {
+      padding: 6px 6px;
+      text-align: right;
+    }
 
-/* Inline YTD label */
-.ytd-label {
-  color: #888;
-  font-size: 0.8em;
-  margin-left: 2px;
-}
+    /* Left-align month names */
+    .perf-mobile-table th {
+      text-align: left;
+      font-weight: 500;
+      color: #444;
+    }
 
-/* Text sizing and spacing */
-.perf-card-mobile {
-  border: 1px solid #e6e9ee;
-  border-radius: 8px;
-  padding: 10px 12px;
-  margin-bottom: 12px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
-}
+    /* Horizontal line between rows */
+    .perf-mobile-table tr:not(:last-child) {
+      border-bottom: 1px solid #e4e7ec;
+    }
+
+    /* Slight highlight for last (current month) row */
+    .perf-mobile-table tr:last-child {
+      background: #f9fafc;
+      border-radius: 4px;
+    }
+
+    /* Inline YTD label */
+    .ytd-label {
+      color: #888;
+      font-size: 0.8em;
+      margin-left: 2px;
+    }
+
+    /* Text sizing and spacing */
+    .perf-card-mobile {
+      border: 1px solid #e6e9ee;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    }
 
 
-/* YTD line on mobile */
-.perf-mobile-ytd {
-  margin-top: 4px;
-  font-size: 0.8em;
-}
+    /* YTD line on mobile */
+    .perf-mobile-ytd {
+      margin-top: 4px;
+      font-size: 0.8em;
+    }
 
-/* Switch view on small screens */
-@media (max-width: 720px) {
-  .perf-table-wrap {
-    display: none;    /* hide big tables */
-  }
+    /* Switch view on small screens */
+    @media (max-width: 720px) {
+      .perf-table-wrap {
+        display: none;
+        /* hide big tables */
+      }
 
-  .perf-cards {
-    display: block;   /* show stacked cards */
-  }
-}
+      .perf-cards {
+        display: block;
+        /* show stacked cards */
+      }
+    }
 
 
     /* Hide short version by default */
@@ -635,6 +651,14 @@
       .meta-line .divider {
         display: none;
       }
+    }
+
+    .person h3 {
+      color: var(--brand);
+      /* uses your --brand: #0B4EA2 variable */
+      margin-top: 0;
+      margin-bottom: 4px;
+      font-weight: 600;
     }
   </style>
 </head>
@@ -715,147 +739,222 @@
           <h2>Performance vs Benchmark</h2>
         </div>
         <div class="perf-table-wrap">
-  <!-- MPST table -->
-  <div class="perf-name mpst">MPST Innovation &amp; Growth ETI</div>
-  <table class="perf-table">
-    <thead>
-      <tr>
-        <th>Year</th>
-        <th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th>
-        <th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov*</th><th>Dec</th><th>YTD</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2025</td>
-        <td></td><td></td><td></td><td></td><td></td><td></td>
-        <td></td><td></td>
-        <td class="perf-pos">2.2%</td>
-        <td class="perf-pos">4.5%</td>
-        <td class="perf-neg">-1.5%</td>
-        <td></td>
-        <td class="perf-pos">5.2%</td>
-      </tr>
-      <tr>
-        <td>2026</td>
-        <td colspan="13"></td>
-      </tr>
-    </tbody>
-  </table>
+          <!-- MPST table -->
+          <div class="perf-name mpst">MPST Innovation &amp; Growth ETI</div>
+          <table class="perf-table">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+                <th>May</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Aug</th>
+                <th>Sep</th>
+                <th>Oct</th>
+                <th>Nov*</th>
+                <th>Dec</th>
+                <th>YTD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="perf-pos">2.2%</td>
+                <td class="perf-pos">4.5%</td>
+                <td class="perf-neg">-1.5%</td>
+                <td></td>
+                <td class="perf-pos">5.2%</td>
+              </tr>
+              <tr>
+                <td>2026</td>
+                <td colspan="13"></td>
+              </tr>
+            </tbody>
+          </table>
 
-  <!-- Nasdaq 100 table -->
-  <div class="perf-name nasdaq">Nasdaq 100</div>
-  <table class="perf-table">
-    <thead>
-      <tr>
-        <th>Year</th>
-        <th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th>
-        <th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov*</th><th>Dec</th><th>YTD</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2025</td>
-        <td class="perf-pos">2.2%</td>
-        <td class="perf-neg">-2.8%</td>
-        <td class="perf-neg">-7.7%</td>
-        <td class="perf-pos">1.5%</td>
-        <td class="perf-pos">9.0%</td>
-        <td class="perf-pos">6.3%</td>
-        <td class="perf-pos">2.4%</td>
-        <td class="perf-pos">0.9%</td>
-        <td class="perf-pos">5.4%</td>
-        <td class="perf-pos">4.8%</td>
-        <td class="perf-neg">-2.8%</td>
-        <td></td>
-        <td class="perf-pos">19.6%</td>
-      </tr>
-      <tr>
-        <td>2026</td>
-        <td colspan="13"></td>
-      </tr>
-    </tbody>
-  </table>
+          <!-- Nasdaq 100 table -->
+          <div class="perf-name nasdaq">Nasdaq 100</div>
+          <table class="perf-table">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+                <th>May</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Aug</th>
+                <th>Sep</th>
+                <th>Oct</th>
+                <th>Nov*</th>
+                <th>Dec</th>
+                <th>YTD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025</td>
+                <td class="perf-pos">2.2%</td>
+                <td class="perf-neg">-2.8%</td>
+                <td class="perf-neg">-7.7%</td>
+                <td class="perf-pos">1.5%</td>
+                <td class="perf-pos">9.0%</td>
+                <td class="perf-pos">6.3%</td>
+                <td class="perf-pos">2.4%</td>
+                <td class="perf-pos">0.9%</td>
+                <td class="perf-pos">5.4%</td>
+                <td class="perf-pos">4.8%</td>
+                <td class="perf-neg">-2.8%</td>
+                <td></td>
+                <td class="perf-pos">19.6%</td>
+              </tr>
+              <tr>
+                <td>2026</td>
+                <td colspan="13"></td>
+              </tr>
+            </tbody>
+          </table>
 
-  <!-- HFRX table -->
-  <div class="perf-name hfrx">HFRX Global Hedge Fund Index</div>
-  <table class="perf-table">
-    <thead>
-      <tr>
-        <th>Year</th>
-        <th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th>
-        <th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov*</th><th>Dec</th><th>YTD</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2025</td>
-        <td class="perf-pos">1.0%</td>
-        <td class="perf-pos">0.3%</td>
-        <td class="perf-neg">-0.8%</td>
-        <td class="perf-neg">-0.4%</td>
-        <td class="perf-pos">1.2%</td>
-        <td class="perf-pos">1.1%</td>
-        <td class="perf-pos">0.6%</td>
-        <td class="perf-pos">1.2%</td>
-        <td class="perf-pos">1.5%</td>
-        <td class="perf-pos">0.7%</td>
-        <td>0.0%</td>
-        <td></td>
-        <td class="perf-pos">6.4%</td>
-      </tr>
-      <tr>
-        <td>2026</td>
-        <td colspan="13"></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+          <!-- HFRX table -->
+          <div class="perf-name hfrx">HFRX Global Hedge Fund Index</div>
+          <table class="perf-table">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+                <th>May</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Aug</th>
+                <th>Sep</th>
+                <th>Oct</th>
+                <th>Nov*</th>
+                <th>Dec</th>
+                <th>YTD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025</td>
+                <td class="perf-pos">1.0%</td>
+                <td class="perf-pos">0.3%</td>
+                <td class="perf-neg">-0.8%</td>
+                <td class="perf-neg">-0.4%</td>
+                <td class="perf-pos">1.2%</td>
+                <td class="perf-pos">1.1%</td>
+                <td class="perf-pos">0.6%</td>
+                <td class="perf-pos">1.2%</td>
+                <td class="perf-pos">1.5%</td>
+                <td class="perf-pos">0.7%</td>
+                <td>0.0%</td>
+                <td></td>
+                <td class="perf-pos">6.4%</td>
+              </tr>
+              <tr>
+                <td>2026</td>
+                <td colspan="13"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-<!-- MOBILE VIEW: STACKED CARDS -->
-<div class="perf-cards">
+        <!-- MOBILE VIEW: STACKED CARDS -->
+        <div class="perf-cards">
 
-  <!-- MPST mobile -->
-  <div class="perf-card-mobile">
-    <h3 class="perf-name mpst">MPST Innovation &amp; Growth ETI</h3>
-    <table class="perf-mobile-table">
-      <tbody>
-        <tr><th>Sep 2025</th><td class="perf-pos">2.2%</td></tr>
-        <tr><th>Oct 2025</th><td class="perf-pos">4.5%</td></tr>
-        <tr><th>Nov 2025*</th><td class="perf-neg">-1.5%</td></tr>
-        <tr><th>YTD</th><td class="perf-pos">5.2%</td></tr>
-      </tbody>
-    </table>
-  </div>
+          <!-- MPST mobile -->
+          <div class="perf-card-mobile">
+            <h3 class="perf-name mpst">MPST Innovation &amp; Growth ETI</h3>
+            <table class="perf-mobile-table">
+              <tbody>
+                <tr>
+                  <th>Sep 2025</th>
+                  <td class="perf-pos">2.2%</td>
+                </tr>
+                <tr>
+                  <th>Oct 2025</th>
+                  <td class="perf-pos">4.5%</td>
+                </tr>
+                <tr>
+                  <th>Nov 2025*</th>
+                  <td class="perf-neg">-1.5%</td>
+                </tr>
+                <tr>
+                  <th>YTD</th>
+                  <td class="perf-pos">5.2%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-  <!-- Nasdaq 100 mobile -->
-  <div class="perf-card-mobile">
-    <h3 class="perf-name nasdaq">Nasdaq 100</h3>
-    <table class="perf-mobile-table">
-      <tbody>
-        <tr><th>Sep 2025</th><td class="perf-pos">5.4%</td></tr>
-        <tr><th>Oct 2025</th><td class="perf-pos">4.8%</td></tr>
-        <tr><th>Nov 2025*</th><td><span class="perf-neg">-2.8%</td></tr>
-        <tr><th>YTD</th><td><span class="perf-pos">19.6%</td></tr>
-      </tbody>
-    </table>
-  </div>
+          <!-- Nasdaq 100 mobile -->
+          <div class="perf-card-mobile">
+            <h3 class="perf-name nasdaq">Nasdaq 100</h3>
+            <table class="perf-mobile-table">
+              <tbody>
+                <tr>
+                  <th>Sep 2025</th>
+                  <td class="perf-pos">5.4%</td>
+                </tr>
+                <tr>
+                  <th>Oct 2025</th>
+                  <td class="perf-pos">4.8%</td>
+                </tr>
+                <tr>
+                  <th>Nov 2025*</th>
+                  <td><span class="perf-neg">-2.8%</td>
+                </tr>
+                <tr>
+                  <th>YTD</th>
+                  <td><span class="perf-pos">19.6%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-  <!-- HFRX mobile -->
-  <div class="perf-card-mobile">
-    <h3 class="perf-name hfrx">HFRX Global Hedge Fund Index</h3>
-    <table class="perf-mobile-table">
-      <tbody>
-        <tr><th>Sep 2025</th><td class="perf-pos">1.5%</td></tr>
-        <tr><th>Oct 2025</th><td class="perf-pos">0.7%</td></tr>
-        <tr><th>Nov 2025*</th> <td><span class="perf-pos">0.0%</td> </tr>
-        <tr><th>YTD</th> <td class="perf-pos">6.4%</span></td> </tr>
-      </tbody>
-    </table>
-  </div>
+          <!-- HFRX mobile -->
+          <div class="perf-card-mobile">
+            <h3 class="perf-name hfrx">HFRX Global Hedge Fund Index</h3>
+            <table class="perf-mobile-table">
+              <tbody>
+                <tr>
+                  <th>Sep 2025</th>
+                  <td class="perf-pos">1.5%</td>
+                </tr>
+                <tr>
+                  <th>Oct 2025</th>
+                  <td class="perf-pos">0.7%</td>
+                </tr>
+                <tr>
+                  <th>Nov 2025*</th>
+                  <td><span class="perf-pos">0.0%</td>
+                </tr>
+                <tr>
+                  <th>YTD</th>
+                  <td class="perf-pos">6.4%</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-  <p class="caption">* Month to date</p>
-</div>
+          <p class="caption">* Month to date</p>
+        </div>
 
 
       </div>
