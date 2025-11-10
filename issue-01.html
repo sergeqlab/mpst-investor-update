@@ -17,7 +17,7 @@
       --bg: #ffffff;
       --accent: #0B4EA214;
       --radius: 10px;
-      --maxw: 860px;
+      --maxw: 1120px;
       --body: 15px;
       --h1: 26px;
       --h2: 17px;
@@ -204,10 +204,14 @@
       grid-template-columns: 1fr;
     }
 
-    @media (min-width: 840px) {
+    @media (min-width: 1200px) {
       .grid-2 {
         grid-template-columns: 1.2fr .8fr;
       }
+      body {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
     }
 
     /* --- Thin facts-style tables --- */
