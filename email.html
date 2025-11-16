@@ -1,0 +1,1252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MPST Innovation and Growth ETI — Investor Update (Issue 01 - November 2025)</title>
+  <style type="text/css">
+    :root {
+      --brand: #0B4EA2;
+      /* Bright MPST Blue */
+      --navy: #001F3E;
+      /* Deep MPST Navy */
+      --ink: #111;
+      --muted: #666;
+      --line: #E9EDF3;
+      --bg: #e2ecf7;
+      --accent: #0B4EA214;
+      --radius: 10px;
+      --maxw: 1120px;
+      --body: 15px;
+      --h1: 26px;
+      --h2: 17px;
+    }
+
+    @media print {
+      :root {
+        --body: 12px;
+        --h1: 20px;
+        --h2: 14px;
+      }
+
+      a[href]:after {
+        content: "";
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      body {
+        background: #fff !important;
+        padding: 12px;
+      }
+
+      /* Print-friendly header: white background, no gradient, no invert */
+      .header {
+        background: #ffffff !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        border: 1px solid #ddd;
+      }
+
+      .brand-mark {
+        filter: none !important;
+        height: 40px !important;
+      }
+
+      .meta {
+        color: var(--muted) !important;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: "IBM Plex Sans", "Roboto", "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+      font-size: var(--body);
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+    }
+
+    /* --- Header Block --- */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      border-radius: var(--radius);
+      background: linear-gradient(90deg, var(--navy), #02305f);
+      color: white;
+      padding: 16px 20px;
+      align-items: center;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+      margin-bottom: 8px;
+    }
+
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .brand-mark {
+      height: 48px;
+      width: auto;
+      flex-shrink: 0;
+    }
+
+    .brand h1 {
+      font-size: var(--h1);
+      margin: 0;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .brand h2 {
+      font-size: var(--h2);
+      font-weight: 400;
+      color: #D0D8E8;
+      margin: 2px 0 6px 0;
+    }
+
+    .brand div b {
+      color: #AFC6E6;
+    }
+
+    .meta {
+      text-align: right;
+      color: #AFC6E6;
+      font-size: 0.95em;
+    }
+
+    .issue-links {
+      margin-top: 4px;
+      font-size: 0.85em;
+    }
+
+    .issue-links a {
+      color: #AFC6E6;
+      text-decoration: none;
+      border-bottom: 1px dotted transparent;
+      transition: all 0.2s ease;
+    }
+
+    .issue-links a:hover {
+      color: #ffffff;
+      border-bottom-color: #ffffff;
+    }
+
+    @media (max-width: 500px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 14px;
+        gap: 8px;
+      }
+
+      .meta {
+        text-align: left;
+      }
+    }
+
+    /* --- Cards & Layout --- */
+    .card {
+      margin-top: 16px;
+      padding: 18px;
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: none !important;
+      border: 1px solid #ddd;
+    }
+
+    h2 {
+      font-size: var(--h2);
+      margin: 0 0 8px 0;
+      color: var(--brand);
+    }
+
+    p {
+      margin: 0 0 10px 0;
+    }
+
+    .tldr {
+      display: grid;
+      gap: 8px;
+      padding: 10px;
+      border-radius: var(--radius);
+      background: var(--accent);
+    }
+
+    .tldr b {
+      color: var(--ink);
+    }
+
+    .grid-2 {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 1200px) {
+      .grid-2 {
+        grid-template-columns: 1.2fr .8fr;
+      }
+      body {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+    }
+
+    /* --- Thin facts-style tables --- */
+    .keyfacts {
+      padding: 16px 18px;
+    }
+
+    .facts {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9em;
+      color: #333;
+    }
+
+    .facts th,
+    .facts td {
+      padding: 6px 8px;
+      border-bottom: 1px solid #e6e9ee;
+      vertical-align: middle;
+    }
+
+    .facts th {
+      width: 38%;
+      font-weight: 500;
+      color: #666;
+      background: none;
+      text-align: left;
+    }
+
+    .admin-card .facts tr:last-child th,
+    .admin-card .facts tr:last-child td {
+      border-bottom: 1px solid #e6e9ee;
+    }
+
+
+    .facts td a {
+      color: var(--brand);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--brand);
+    }
+
+    .facts td a:hover {
+      color: #073777;
+      border-bottom-color: #073777;
+    }
+
+    .platform-logos {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .platform-logos img {
+      height: 22px;
+      width: auto;
+      image-rendering: crisp-edges;
+      vertical-align: middle;
+      opacity: 0.95;
+      transition: opacity 0.2s ease;
+    }
+
+    .platform-logos img:hover {
+      opacity: 1;
+    }
+
+    .footer {
+      margin-top: 18px;
+      font-size: .88em;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.55rem 0.9rem;
+      border-radius: 8px;
+      border: 1px solid var(--brand);
+      color: #fff;
+      background: var(--brand);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9em;
+      transition: all 0.15s ease-in-out;
+    }
+
+    .btn:hover {
+      background: #073777;
+      border-color: #073777;
+    }
+
+    .btn.alt {
+      color: var(--brand);
+      background: #fff;
+      border: 1px solid var(--brand);
+    }
+
+    .btn.alt:hover {
+      background: var(--accent);
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    @media (min-width: 800px) {
+      .team {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .person {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    .small {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .caption {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    .grid {
+      display: block;
+      margin-top: 16px;
+    }
+
+    .performance-card {
+      margin-top: 20px;
+      padding: 18px 22px;
+      background: linear-gradient(180deg, #f9fafc, #ffffff);
+      box-shadow: 0 4px 10px rgba(11, 78, 162, 0.05);
+    }
+
+    .performance-card img {
+      width: 100%;
+      display: block;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+    }
+
+    .performance-card .caption {
+      font-size: 0.9em;
+      color: var(--muted);
+      margin-top: 6px;
+      text-align: center;
+    }
+
+    .perf-name {
+      margin: 10px 0 4px;
+      font-size: 0.95em;
+      font-weight: 600;
+    }
+
+    .perf-name.mpst {
+      color: var(--brand);
+    }
+
+    .perf-name.nasdaq {
+      color: var(--brand);
+    }
+
+    .perf-name.hfrx {
+      color: var(--brand);
+    }
+
+    .perf-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82em;
+      margin: 8px 0 14px 0;
+      border-top: 1px solid #e6e9ee;
+      border-bottom: 1px solid #e6e9ee;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .perf-table th,
+    .perf-table td {
+      padding: 3px 5px;
+      text-align: right;
+      border-bottom: 1px solid #f0f2f6;
+    }
+
+    .perf-table th:first-child,
+    .perf-table td:first-child {
+      text-align: left;
+      padding-left: 8px;
+      white-space: nowrap;
+    }
+
+    .perf-table th:last-child,
+    .perf-table td:last-child {
+      padding-right: 8px;
+    }
+
+    .perf-table thead th {
+      background: #f9fafc;
+      font-weight: 600;
+      border-bottom: 1px solid #e0e3e8;
+      color: #444;
+    }
+
+    .perf-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Positive and negative numbers */
+    .perf-pos {
+      color: #008000;
+    }
+
+    .perf-neg {
+      color: #c0392b;
+    }
+
+    /* Optional: slight hover shading (screen only) */
+    @media screen {
+      .perf-table tbody tr:hover td {
+        background: #fafbfd;
+      }
+    }
+
+    /* Desktop / tablet performance tables */
+    .perf-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 4px;
+    }
+
+    .perf-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82em;
+      margin: 8px 0 14px 0;
+      border-top: 1px solid #e6e9ee;
+      border-bottom: 1px solid #e6e9ee;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      min-width: 720px;
+      /* avoids squashing on mid-size screens */
+    }
+
+    .perf-table th,
+    .perf-table td {
+      padding: 3px 5px;
+      text-align: right;
+      border-bottom: 1px solid #f0f2f6;
+    }
+
+    .perf-table th:first-child,
+    .perf-table td:first-child {
+      text-align: left;
+      padding-left: 8px;
+      white-space: nowrap;
+    }
+
+    .perf-table th:last-child,
+    .perf-table td:last-child {
+      padding-right: 8px;
+    }
+
+    .perf-table thead th {
+      background: #f9fafc;
+      font-weight: 600;
+      border-bottom: 1px solid #e0e3e8;
+      color: #444;
+    }
+
+    .perf-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Labels and colour */
+    .perf-name {
+      margin: 10px 0 4px;
+      font-size: 0.95em;
+      font-weight: 600;
+    }
+
+    .perf-name.mpst {
+      color: var(--brand);
+    }
+
+    .perf-name.nasdaq {
+      color: var(--brand)
+    }
+
+    .perf-name.hfrx {
+      color: var(--brand)
+    }
+
+    .perf-pos {
+      color: #008000;
+    }
+
+    .perf-neg {
+      color: #c0392b;
+    }
+
+    /* Mobile cards – hidden by default on desktop */
+    .perf-cards {
+      display: none;
+    }
+
+    .perf-card-mobile {
+      border: 1px solid #e6e9ee;
+      border-radius: 8px;
+      padding: 8px 10px;
+      margin-bottom: 10px;
+      background: #ffffff;
+    }
+
+    .perf-card-mobile h3 {
+      margin: 0 0 4px 0;
+      font-size: 0.9em;
+    }
+
+    /* --- Mobile performance table styling --- */
+    .perf-mobile-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82em;
+      margin-top: 4px;
+    }
+
+    .perf-mobile-table th,
+    .perf-mobile-table td {
+      padding: 6px 6px;
+      text-align: right;
+    }
+
+    /* Left-align month names */
+    .perf-mobile-table th {
+      text-align: left;
+      font-weight: 500;
+      color: #444;
+    }
+
+    /* Horizontal line between rows */
+    .perf-mobile-table tr:not(:last-child) {
+      border-bottom: 1px solid #e4e7ec;
+    }
+
+    /* Slight highlight for last (current month) row */
+    .perf-mobile-table tr:last-child {
+      background: #f9fafc;
+      border-radius: 4px;
+    }
+
+    /* Inline YTD label */
+    .ytd-label {
+      color: #888;
+      font-size: 0.8em;
+      margin-left: 2px;
+    }
+
+    /* Text sizing and spacing */
+    .perf-card-mobile {
+      border: 1px solid #e6e9ee;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    }
+
+
+    /* YTD line on mobile */
+    .perf-mobile-ytd {
+      margin-top: 4px;
+      font-size: 0.8em;
+    }
+
+@media (min-width: 720px) {
+      .full-brand-mark {
+        filter: none !important;
+        height: 100px !important;
+        width: auto;
+        flex-shrink: 0;
+      }
+
+      .short-brand-mark {
+        display: none;
+      }
+    }
+    /* Switch view on small screens */
+    @media (max-width: 720px) {
+      .perf-table-wrap {
+        display: none;
+        /* hide big tables */
+      }
+
+      .perf-cards {
+        display: block;
+        /* show stacked cards */
+      }
+      
+      .short-brand-mark {
+        filter: none !important;
+        height: 80px !important;
+        width: auto;
+        flex-shrink: 0;
+      }
+
+      .full-brand-mark {
+        display: none;
+      }
+    }
+
+
+    /* Hide short version by default */
+    .short-title,
+    .short-subtitle {
+      display: none;
+    }
+
+    /* Show shorter version on small screens */
+    @media (max-width: 720px) {
+
+      .full-title,
+      .full-subtitle {
+        display: none;
+      }
+
+      .short-title,
+      .short-subtitle {
+        display: inline;
+      }
+    }
+
+    .meta-line {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+
+    /* Each label+value stays on one line */
+    .meta-block {
+      white-space: nowrap;
+    }
+
+    /* Mobile behaviour: stack the two blocks, hide the dot */
+    @media (max-width: 720px) {
+      .meta-line {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+      }
+
+      .meta-line .divider {
+        display: none;
+      }
+    }
+
+    .person h3 {
+      color: var(--brand);
+      /* uses your --brand: #0B4EA2 variable */
+      margin-top: 0;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="brand">
+        <img src="https://mcusercontent.com/90e7f00574fbf80a45809a71e/images/b3625737-5bbc-434f-7f03-7d356f301f9f.png" alt="MPST Logo" style="height:98px;width:auto" class="full-brand-mark">
+        <img src="https://mcusercontent.com/90e7f00574fbf80a45809a71e/images/b3625737-5bbc-434f-7f03-7d356f301f9f.png" alt="MPST Logo" style="height:98px;width:auto" class="short-brand-mark">
+        <div>
+          <h1>
+            <span class="full-title">MPST Innovation and Growth ETI</span>
+            <span class="short-title">MPST ETI</span>
+          </h1>
+
+          <h2>
+            <span class="full-subtitle">Investor Update</span>
+            <span class="short-subtitle">Investor Update</span>
+          </h2>
+
+          <div class="meta-line">
+            <span class="meta-block">
+              <strong>ISIN:</strong>&nbsp;DE000AMC0CB4
+            </span>
+            <span class="divider">·</span>
+            <span class="meta-block">
+              <strong>Issue:</strong>&nbsp;01
+            </span>
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="meta">
+        <div><strong>As of:</strong> 7&nbsp;Nov&nbsp;2025</div>
+        <div class="issue-links">
+          <a href="#" target="_blank">
+            ← Previous Issue
+          </a>
+          &nbsp;|&nbsp;
+          <a href="#" target="_blank">
+            Next Issue →
+          </a>
+        </div>
+        <div style="margin-top:6px;">
+          <a class="btn alt" href="https://www.boerse-stuttgart.de/en/products/investment-products/index-certificates/stuttgart/amc0cb" target="_blank">
+            Exchange page →
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- MONTH / TLDR -->
+    <section class="card">
+      <h2>November 2025</h2>
+      <div class="tldr">
+        <div><b>Market:</b> Nasdaq 100 and S&amp;P500 linked leveraged ETFs.</div>
+        <div><b>Strategy:</b> Capture compounding effect and structural decay in leveraged ETFs while capping
+          drawdowns.</div>
+      </div>
+    </section>
+
+
+    <!-- PERFORMANCE (FULL WIDTH) -->
+    <section class="wrap grid">
+      <div class="card performance-card">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:5px;">
+          <img style="height:28px; width:25px;filter:invert(84%) sepia(94%) saturate(2932%) hue-rotate(196deg) brightness(94%) contrast(101%);" src="https://mcusercontent.com/90e7f00574fbf80a45809a71e/images/9edcfed7-d78a-d564-db92-17286a029727.png" alt="Performance Icon">
+          <h2>Performance vs Benchmark</h2>
+        </div>
+        <div class="perf-table-wrap">
+          <!-- MPST table -->
+          <div class="perf-name mpst">MPST Innovation &amp; Growth ETI</div>
+          <table class="perf-table">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+                <th>May</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Aug</th>
+                <th>Sep</th>
+                <th>Oct</th>
+                <th>Nov*</th>
+                <th>Dec</th>
+                <th>LTD**</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="perf-pos">2.2%</td>
+                <td class="perf-pos">4.5%</td>
+                <td class="perf-neg">-1.5%</td>
+                <td></td>
+                <td class="perf-pos">5.2%</td>
+              </tr>
+              <tr>
+                <td>2026</td>
+                <td colspan="13"></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Nasdaq 100 table -->
+          <div class="perf-name nasdaq">Nasdaq 100</div>
+          <table class="perf-table">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+                <th>May</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Aug</th>
+                <th>Sep</th>
+                <th>Oct</th>
+                <th>Nov*</th>
+                <th>Dec</th>
+                <th>YTD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025</td>
+                <td class="perf-pos">2.2%</td>
+                <td class="perf-neg">-2.8%</td>
+                <td class="perf-neg">-7.7%</td>
+                <td class="perf-pos">1.5%</td>
+                <td class="perf-pos">9.0%</td>
+                <td class="perf-pos">6.3%</td>
+                <td class="perf-pos">2.4%</td>
+                <td class="perf-pos">0.9%</td>
+                <td class="perf-pos">5.4%</td>
+                <td class="perf-pos">4.8%</td>
+                <td class="perf-neg">-2.8%</td>
+                <td></td>
+                <td class="perf-pos">19.6%</td>
+              </tr>
+              <tr>
+                <td>2026</td>
+                <td colspan="13"></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- HFRX table -->
+          <div class="perf-name hfrx">HFRX Global Hedge Fund Index</div>
+          <table class="perf-table">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+                <th>May</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Aug</th>
+                <th>Sep</th>
+                <th>Oct</th>
+                <th>Nov*</th>
+                <th>Dec</th>
+                <th>YTD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025</td>
+                <td class="perf-pos">1.0%</td>
+                <td class="perf-pos">0.3%</td>
+                <td class="perf-neg">-0.8%</td>
+                <td class="perf-neg">-0.4%</td>
+                <td class="perf-pos">1.2%</td>
+                <td class="perf-pos">1.1%</td>
+                <td class="perf-pos">0.6%</td>
+                <td class="perf-pos">1.2%</td>
+                <td class="perf-pos">1.5%</td>
+                <td class="perf-pos">0.7%</td>
+                <td>0.0%</td>
+                <td></td>
+                <td class="perf-pos">6.4%</td>
+              </tr>
+              <tr>
+                <td>2026</td>
+                <td colspan="13"></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="caption">* Month to date, ** LTD = Launch to date (Launched on September, 1st 2025).</p>
+        </div>
+
+        <!-- MOBILE VIEW: STACKED CARDS -->
+        <div class="perf-cards">
+
+          <!-- MPST mobile -->
+          <div class="perf-card-mobile">
+            <h3 class="perf-name mpst">MPST Innovation &amp; Growth ETI</h3>
+            <table class="perf-mobile-table">
+              <tbody>
+                <tr>
+                  <th>Sep 2025</th>
+                  <td class="perf-pos">2.2%</td>
+                </tr>
+                <tr>
+                  <th>Oct 2025</th>
+                  <td class="perf-pos">4.5%</td>
+                </tr>
+                <tr>
+                  <th>Nov 2025*</th>
+                  <td class="perf-neg">-1.5%</td>
+                </tr>
+                <tr>
+                  <th>LTD (Launch to date**)</th>
+                  <td class="perf-pos">5.2%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Nasdaq 100 mobile -->
+          <div class="perf-card-mobile">
+            <h3 class="perf-name nasdaq">Nasdaq 100</h3>
+            <table class="perf-mobile-table">
+              <tbody>
+                <tr>
+                  <th>Sep 2025</th>
+                  <td class="perf-pos">5.4%</td>
+                </tr>
+                <tr>
+                  <th>Oct 2025</th>
+                  <td class="perf-pos">4.8%</td>
+                </tr>
+                <tr>
+                  <th>Nov 2025*</th>
+                  <td><span class="perf-neg">-2.8%</span></td>
+                </tr>
+                <tr>
+                  <th>YTD</th>
+                  <td><span class="perf-pos">19.6%</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- HFRX mobile -->
+          <div class="perf-card-mobile">
+            <h3 class="perf-name hfrx">HFRX Global Hedge Fund Index</h3>
+            <table class="perf-mobile-table">
+              <tbody>
+                <tr>
+                  <th>Sep 2025</th>
+                  <td class="perf-pos">1.5%</td>
+                </tr>
+                <tr>
+                  <th>Oct 2025</th>
+                  <td class="perf-pos">0.7%</td>
+                </tr>
+                <tr>
+                  <th>Nov 2025*</th>
+                  <td><span class="perf-pos">0.0%</span></td>
+                </tr>
+                <tr>
+                  <th>YTD</th>
+                  <td class="perf-pos">6.4%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="caption">* Month to date, ** Launched on September, 1st 2025.</p>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- MAIN GRID: MARKET + STRATEGY + KEY FACTS + STRATEGY PROFILE -->
+    <section class="grid-2">
+      <div>
+        <!-- Market pulse -->
+        <div class="card">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <img style="height:28px; width:25px;filter:invert(84%) sepia(94%) saturate(2932%) hue-rotate(196deg) brightness(94%) contrast(101%);" src="https://mcusercontent.com/90e7f00574fbf80a45809a71e/images/cfff072f-381d-7493-1fe2-98eae775006c.png" alt="Market Pulse Icon">
+            <h2>Market pulse</h2>
+          </div>
+          <p>
+            U.S. equities, led by large-cap technology names, delivered positive returns in September and October
+            2025. Over this period, the Nasdaq 100 (QQQ ETF) gained approximately 7%, outpacing the broader S&P 500 (SPY
+            ETF), which advanced about 3%.
+          </p>
+          <p>
+            This persistent leadership by mega-cap growth stocks underscores the strength of the technology sector but
+            also highlights the growing concentration risks inherent in broad, market cap–weighted indices.
+          </p>
+          <p>
+            Leveraged vehicles such as TQQQ (3× long Nasdaq 100) amplify upside momentum, yet in an environment where
+            valuations remain historically high, the potential for sharp reversals increases. In such an environment,
+            disciplined risk management is imperative.
+          </p>
+        </div>
+
+        <!-- Strategy spotlight -->
+        <div class="card">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <img style="height:28px; width:25px;filter:invert(84%) sepia(94%) saturate(2932%) hue-rotate(196deg) brightness(94%) contrast(101%);" src="https://mcusercontent.com/90e7f00574fbf80a45809a71e/images/fda1fff1-06c1-a7aa-2c69-0b0594b1f733.png" alt="Strategy Spotlight Icon">
+            <h2>Strategy spotlight — Leveraged US ETFs</h2>
+          </div>
+          <p>Leveraged Nasdaq 100 and S&P 500 ETFs display a distinct structural duality because of the process of daily
+            rebalancing: a powerful compounding, or “snowballing,” effect during sustained upward trends, contrasted
+            with relative underperformance in range-bound or volatile markets.</p>
+          <p>
+            Our investment process is designed to systematically capture prevailing market trends while containing
+            drawdowns through tactical hedging and disciplined position
+            management. The objective is to generate steady, risk-adjusted returns in all market conditions.
+          </p>
+        </div>
+      </div>
+
+      <aside>
+        <!-- Key facts -->
+        <div class="card keyfacts">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:5px;">
+            <img style="height:28px; width:25px;filter:invert(84%) sepia(94%) saturate(2932%) hue-rotate(196deg) brightness(94%) contrast(101%);" src="https://mcusercontent.com/90e7f00574fbf80a45809a71e/images/4e368e24-f045-a160-b0c7-46b4e179bbca.png" alt="Key facts Icon">
+            <h2>Key facts</h2>
+          </div>
+          <table class="facts">
+            <tr>
+              <th>Product name</th>
+              <td><a href="https://imaps-capital.com/eti-details/?isin=DE000AMC0CB4" target="_blank">
+                  MPST Innovation and Growth ETI</a>
+              </td>
+            </tr>
+            <tr>
+              <th>ISIN</th>
+              <td>
+                <a href="https://www.boerse-stuttgart.de/en/products/investment-products/index-certificates/stuttgart/amc0cb" target="_blank">
+                  DE000AMC0CB4
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th>Issuer</th>
+              <td>
+                <a href="https://imaps-capital.com" target="_blank">
+                  iMaps ETI AG
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th>Custodian</th>
+              <td><a href="https://www.baaderbank.de/en" target="_blank">Baader Bank</a></td>
+            </tr>
+            <tr>
+              <th>Platforms</th>
+              <td>
+                <div class="platform-logos">
+                  <a href="https://www.interactivebrokers.com/" target="_blank">
+                    <img style="width:98px;height: auto;" src="https://mcusercontent.com/90e7f00574fbf80a45809a71e/images/78203082-edea-1198-80c2-7e8411828e6e.png" alt="Interactive Broker">
+                  </a>
+                  <a href="https://www.swissquote.com/" target="_blank">
+                    <img style="width:54px;height: auto;" src="https://mcusercontent.com/90e7f00574fbf80a45809a71e/images/61d2f84f-16eb-f638-322c-9df8ff900fc1.png" alt="Swissquote">
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>NAV publication</th>
+              <td>
+                <a href="https://www.boerse-stuttgart.de/en/products/investment-products/index-certificates/stuttgart/amc0cb" target="_blank">
+                  Daily on Stuttgart Börse
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th>NAV (Close, 7 Nov 2025)</th>
+              <td>€105</td>
+            </tr>
+            <tr>
+              <th>Contact us</th>
+              <td><a href="mailto:info@mpstcapital.com">info@mpstcapital.com</a></td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Strategy profile -->
+        <div class="card keyfacts">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:5px;">
+            <img style="height:28px; width:34px;filter:invert(10%) sepia(94%) saturate(2932%) hue-rotate(196deg) brightness(94%) contrast(101%);" src="https://mcusercontent.com/90e7f00574fbf80a45809a71e/images/4e0b0b48-de78-80c6-3c37-206075210b89.png" alt="Strategy profile Icon">
+            <h2>Strategy profile</h2>
+          </div>
+          <table class="facts">
+            <tr>
+              <th>Target return</th>
+              <td>25–30% annualised.</td>
+            </tr>
+            <tr>
+              <th>Risk guardrails</th>
+              <td>Exposure losses capped via options and macro hedges.</td>
+            </tr>
+            <tr>
+              <th>Edge</th>
+              <td>Dynamic sizing reduces drawdowns seen in buy-and-hold leveraged ETFs.</td>
+            </tr>
+          </table>
+        </div>
+      </aside>
+    </section>
+
+    <!-- TEAM -->
+    <section class="wrap grid">
+      <div class="card">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:5px;">
+          <img style="height:28px; width:25px;filter:invert(84%) sepia(94%) saturate(2932%) hue-rotate(196deg) brightness(94%) contrast(101%);" src="https://mcusercontent.com/90e7f00574fbf80a45809a71e/images/7a326211-64cd-9dee-ff6b-bf64f72b4b7b.png" alt="Team Icon">
+          <h2>Team</h2>
+        </div>
+        <div class="team">
+
+          <div class="person" style="display:flex;align-items:flex-start;gap:14px;">
+            <img src="https://mcusercontent.com/90e7f00574fbf80a45809a71e/images/065686e7-2984-ae77-8d42-61bf026b02fb.png" alt="Matthieu Prevot" style="width:72px;height:72px;border-radius:50%;object-fit:cover;border:1px solid #ddd;">
+            <div>
+              <h3 style="margin-top:0;">Matthieu Prevot</h3>
+              <p class="small">
+                Portfolio Manager
+              </p>
+              <p class="small">
+                Over 20 years of experience in equity derivatives across BNP Paribas, Citigroup, and Dresdner Bank.
+                Graduate of Paris-Sorbonne and Paris-Dauphine Universities.
+              </p>
+            </div>
+          </div>
+
+          <div class="person" style="display:flex;align-items:flex-start;gap:14px;">
+            <img src="https://mcusercontent.com/90e7f00574fbf80a45809a71e/images/a288b25f-368c-472f-dd98-9f20ee77fe58.png" alt="Serge Tchangue" style="width:72px;height:72px;border-radius:50%;object-fit:cover;border:1px solid #ddd;">
+            <div>
+              <h3 style="margin-top:0;">Serge Tchangue</h3>
+              <p class="small">
+                Portfolio Manager
+              </p>
+              <p class="small">
+                Over 18 years of experience as a quantitative developer with BNP Paribas, Citigroup, and Dresdner Bank.
+                Graduate of École Polytechnique (X) and École des Ponts et Chaussées.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="person" style="margin-top:16px; background:#f9fafc;">
+          <p class="small" style="margin:0;">
+            Together, they combine institutional trading expertise with advanced software engineering
+            to deliver robust, transparent, and disciplined strategy execution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATES & ADMIN (FULL WIDTH) -->
+    <section class="wrap grid">
+      <div class="card">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:5px;">
+          <img style="height:28px; width:25px;
+               filter:invert(83%) sepia(94%) saturate(2932%) hue-rotate(196deg) brightness(94%) contrast(101%);" src="https://mcusercontent.com/90e7f00574fbf80a45809a71e/images/c8d0326d-1aa9-82b0-7eeb-6124708d0456.png" alt="Dates and Admin Icon">
+          <h2>Dates &amp; admin</h2>
+        </div>
+        <table class="facts">
+          <tr>
+            <th>Next update</th>
+            <td>Fri&nbsp;05&nbsp;Dec&nbsp;2025</td>
+          </tr>
+          <tr>
+            <th>Investor call</th>
+            <td>
+              <a href="https://cal.com/serge-tchangue-pdcrny" target="_blank">
+                Book a slot →
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th>Documents</th>
+            <td>
+              <a href="https://imaps-capital.com/pdf/ETI Final Terms & Conditions/DE000AMC0CB4 - ETI Final Terms & Conditions.pdf" target="_blank">
+                Final Terms
+              </a>
+              &nbsp;|&nbsp;
+              <a href="https://imaps-capital.com/pdf/Key Information Document/DE000AMC0CB4 - Key Information Document.pdf" target="_blank">
+                KID
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      </footer><p>
+        <strong>Disclaimer:</strong> This document is for information purposes only and does not constitute investment
+        advice or a solicitation. MPST Capital LLP does not provide investment services. Past or
+        simulated results are not necessarily indicative of future performance.
+      </p>
+      <p class="no-print" style="margin-top:12px; display:flex; flex-wrap:wrap; gap:8px;">
+        <!-- Nav buttons for issues -->
+        <a class="btn alt" href="#" target="_blank">
+          ← Previous Issue
+        </a>
+        <a class="btn" href="#" target="_blank">
+          Next Issue →
+        </a>
+      </p>
+    
+  </div>
+  
+
+            <center>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="canspamBarWrapper" style="background-color:#FFFFFF; border-top:1px solid #E5E5E5;">
+                    <tr>
+                        <td align="center" valign="top" style="padding-top:20px; padding-bottom:20px;">
+                            <table border="0" cellpadding="0" cellspacing="0" id="canspamBar">
+                                <tr>
+                                    <td align="center" valign="top" style="color:#606060; font-family:Helvetica, Arial, sans-serif; font-size:11px; line-height:150%; padding-right:20px; padding-bottom:5px; padding-left:20px; text-align:center;">
+                                        This email was sent to <a href="mailto:*|EMAIL|*" target="_blank" style="color:#404040 !important;">*|EMAIL|*</a>
+                                        <br>
+                                        <a href="*|ABOUT_LIST|*" target="_blank" style="color:#404040 !important;"><em>why did I get this?</em></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="*|UNSUB|*" style="color:#404040 !important;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="*|UPDATE_PROFILE|*" style="color:#404040 !important;">update subscription preferences</a>
+                                        <br>
+                                        *|LIST:ADDRESSLINE|*
+                                        <br>
+                                        <br>
+                                        *|REWARDS|*
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <style type="text/css">
+                    @media only screen and (max-width: 480px){
+                        table#canspamBar td{font-size:14px !important;}
+                        table#canspamBar td a{display:block !important; margin-top:10px !important;}
+                    }
+                </style>
+            </center></body>
+
+</html>
